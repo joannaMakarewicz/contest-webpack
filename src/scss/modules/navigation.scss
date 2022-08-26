@@ -1,0 +1,27 @@
+.navigation {
+    padding: 16px;
+    display: none;
+    &__link {
+      display: block;
+      text-decoration: none;
+    }
+    &__open {
+      display: block;
+      background:#EDF67D;
+    }
+  }
+  
+  .navigation__link:hover {
+    color:#3d348b;
+    font-size:26px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .navigation {
+      width: 100vw;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      min-height: 200px;
+    }
+  }

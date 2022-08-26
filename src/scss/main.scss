@@ -3,11 +3,77 @@
 @import "_variables";
 @import "modules/hello.scss";
 
+@import "../scss/modules/form.scss";
+@import "../scss/modules/navigation.scss";
+@import "../scss/modules/special.scss";
+@import "../scss/modules/hamburger.scss";
+@import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
-  background: $wtf;
-  color: #fff;
+  background-color: #88bcf2;
+  background-image: linear-gradient(180deg, #88bcf2 25%, #f7e256 100%);
+  min-width: 100vw;
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+.footer {
+  text-align: center;
+  color: grey;
+  font-size: 15px;
+  padding: 40px 0px 5px 0px;
+}
+
+h1 {
+  color: #3d348b;
+  margin-top: 0;
+  padding-top: 20px;
+  text-align: center;
+  line-height: 30px;
+}
+
+h2 {
+  color: #191716;
+}
+
+.main {
+  width: 80%;
+  &__heading {
+    line-height: 20px;
+    padding: 10px 0px;
+  }
+}
+
+.header {
+  background-image: url("../assets/img/image2.jpg");
+  background-position: center center;
+  background-size: cover;
+  margin-top: 0;
+  min-height: 200px;
+  min-width: 100vw;
+  top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    width: 60%;
+    &__heading {
+      line-height: 40px;
+      padding: 20px 0px;
+    }
+  }
+}
+
