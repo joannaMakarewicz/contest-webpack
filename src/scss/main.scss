@@ -51,9 +51,15 @@ h2 {
 
 .main {
   width: 80%;
+  &__content {
+    margin: 0;
+  }
   &__heading {
     line-height: 20px;
     padding: 10px 0px;
+  }
+  &__welcome {
+    margin-bottom: 0;
   }
 }
 
@@ -76,4 +82,3 @@ h2 {
     }
   }
 }
-
