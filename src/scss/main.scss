@@ -9,8 +9,14 @@
 @import "../scss/modules/hamburger.scss";
 @import "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css";
 
+
+
+
+
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 190px;
 }
 
 *,
@@ -59,6 +65,14 @@ h2 {
     line-height: 20px;
     padding: 10px 0px;
   }
+  &__icon {
+    color:#3d348b;
+    height: 50px;
+   bottom:2%;
+   position:fixed;
+   right:2%;
+    width: 50px;
+  }
   &__welcome {
     margin-bottom: 0;
   }
@@ -69,6 +83,7 @@ h2 {
   background-image: url("../assets/img/image2.jpg");
   background-position: center center;
   background-size: cover;
+  left:0;
   margin-top: 0;
   min-height: 200px;
   min-width: 100vw;
