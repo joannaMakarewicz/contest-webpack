@@ -1,18 +1,23 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](https://joannamakarewicz.github.io/contest-webpack/konkurs.jpg)
 
-# WTF Webpack Starter Kit 
+# Description
 
-Simple toolkit for your static websites development.
+Project is a form for a summer competition. You have one main question and than several different kind of data to fill into form. The form includes validations.
 
-## How to use it?
+You can check this Project here: https://joannamakarewicz.github.io/contest-webpack/
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+## Contents
 
-## Available scripts
+Project contains of three section of questions:
 
-`npm run start` - runs development mode
+1. Main question in the competition. You should fill the tittle of your favoritte book, it's author and assets of that book.
+2. Information about your - name, surname, full adress, phone number, e-mail adress.
+3. Section for choosing prize - you can choose from list or add your suggestion.
 
-`npm run build` - runs build process for production
+### Languages
 
-`npm run publish` - runs build process and publish the page using `gh-pages` branch
-
+Languages used to build Project: 
+- HTML 
+- CSS 
+- SCSS 
+- JS.
