@@ -1,0 +1,29 @@
+.main {
+  width: 80%;
+  margin-top: 100px;
+  @media screen and (min-width: 1024px) {
+    margin-top: 200px;
+  }
+  &__content {
+    margin: 0;
+  }
+  &__heading {
+    line-height: 20px;
+    padding: 10px 0px;
+    @media screen and (min-width: 768px) {
+      line-height: 40px;
+      padding: 20px 0px;
+    }
+  }
+  &__icon {
+    color: #3d348b;
+    height: 50px;
+    bottom: 2%;
+    position: fixed;
+    right: 2%;
+    width: 50px;
+  }
+  &__welcome {
+    margin-bottom: 0;
+  }
+}

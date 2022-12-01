@@ -1,73 +1,64 @@
 .form {
-    &__area {
-      text-align: left;
-      width: 100%;
-      border: none;
-      height: 100px;
-      padding: 5px;
-      border-radius: 5px;
-      font-size: smaller;
-    }
-    &__article {
-      padding: 0px;
-      border-top: 1px solid white;
-    }
-    &__button {
-      background: #3d348b;
-      color: white;
-      border: 0;
-      border-radius: 5px;
-      padding: 5px;
-      min-width: 200px;
-      margin: 5px;
-    }
-    &__ending {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    &__heading::before{
-      content:"🌞";
-    }
-    &__item {
-      display: block;
-      width: 100%;
-      border: none;
-      border-radius: 5px;
-      padding: 5px;
-      font-size: smaller;
-    }
-    &__task {
-      line-height: 20px;
-    }
-    &__question {
-      margin-bottom: 10px;
+  &__area {
+    text-align: left;
+    width: 100%;
+    border: none;
+    height: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: smaller;
+    &:focus {
+      background: #edf67d;
     }
   }
-  
-  .form__item:focus {
-    background:#EDF67D;
-  }
-  
-  .form__area:focus {
-    background:#EDF67D;
-  }
-
-  @media screen and (min-width: 768px) {
-    
-  .form {
-
-    &__article {
+  &__article {
+    padding: 0px;
+    border-top: 1px solid white;
+    @media screen and (min-width: 768px) {
       padding: 20px 0px;
     }
-    &__button {
+  }
+  &__button {
+    background: #3d348b;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+    min-width: 200px;
+    margin: 5px;
+    @media screen and (min-width: 768px) {
       margin: 0px;
     }
-    &__ending {
+  }
+  &__ending {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    @media screen and (min-width: 768px) {
       justify-content: space-around;
     }
-    &__task {
+  }
+  &__heading::before {
+    content: "🌞";
+  }
+  &__item {
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: smaller;
+    &:focus {
+      background: #edf67d;
+    }
+  }
+  &__task {
+    line-height: 20px;
+    @media screen and (min-width: 768px) {
       line-height: 40px;
     }
   }
+  &__question {
+    margin-bottom: 10px;
   }
+}

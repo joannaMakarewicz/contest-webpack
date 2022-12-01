@@ -1,22 +1,18 @@
 .special {
+  font-weight: bold;
+  color: #ffec15;
+  font-size: 20px;
+  &__heading {
+    color: #3d348b;
     font-weight: bold;
-    color: #ffec15;
-    font-size: 20px;
-    &__heading {
-      color: #3d348b;
+    line-height: 40px;
+    @media screen and (min-width: 1024px) {
       font-weight: bold;
-      line-height: 40px;
+      color: #ffec15;
+      font-size: 20px;
     }
-    &__item {
-      color: red;
-    }
-    }
-
-@media screen and (min-width: 768px) {
-    
-  .special__heading {
-    font-weight: bold;
-    color: #ffec15;
-    font-size: 20px;
+  }
+  &__item {
+    color: red;
   }
 }
